@@ -11,8 +11,7 @@
         padding: 20px;  
         background: cadetblue;  
       }  
-      .container {  
-        max-width: 400px;  
+      .container {    
         margin: 40px auto;  
         padding: 20px;  
         background: #fff;  
@@ -25,13 +24,19 @@
         margin-bottom: 20px;  
       }  
       .container p {  
-        margin-bottom: 20px;  
+        margin-bottom: 20px;
+        text-align: center;  
       }  
-      input, button {  
+      button {  
         padding: 10px;  
         margin-top: 10px;  
         width: 100%;  
-      }  
+      }
+      input {  
+        padding: 10px;  
+        margin-top: 10px;  
+        width: 97.5%;  
+      }    
       button {  
         background: #4CAF50;  
         color: #fff;  
@@ -54,9 +59,11 @@
 <body>  
    <div class="container">  
       <h1>Welcome To JosephGPA! Made after the greatest guy ever!!</h1>  
-      <p1>Enter your grades separated by commas (e.g., 90, 85, 78)</p1>  
+      <p>Enter your grades separated by commas (e.g., 90, 85, 78)</p>  
       <input type="text" id="grades" placeholder="Enter grades here">  
-      <button id="submit">Submit</button>  
+      <button id="submit">Submit</button>
+      <hr>
+      <p1>Results:</p1>  
       <div id="result"></div>  
    </div>  
   
