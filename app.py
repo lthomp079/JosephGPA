@@ -7,9 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/slope')
+@app.route('/hawks')
 def slope():
-    return render_template('slope.html')
+    return render_template('hawks.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
