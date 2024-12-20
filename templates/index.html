@@ -85,9 +85,9 @@
    <script>  
       document.getElementById('submit').addEventListener('click', function() {  
         const grades = document.getElementById('grades').value;  
-        let slopebool = grades.includes("slope");  
+        let slopebool = grades.includes("hawks");  
         if (slopebool == true) {  
-        window.open("/slope");  
+        window.open("/hawks");  
       }  
         fetch('/submit', {  
            method: 'POST',  
