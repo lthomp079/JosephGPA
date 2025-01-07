@@ -6,11 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-
+"""
 @app.route('/hawks')
 def slope():
     return render_template('hawks.html')
-
+"""
 @app.route('/submit', methods=['POST'])
 def submit():
     grades = request.form['grades']
