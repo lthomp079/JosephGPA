@@ -5,16 +5,27 @@
 using namespace std;
 bool isString(string str) {
     int periodCount = 0;
-    for (char i : str) {
+    int numCount = 0;
+    for (int p=0; p < str.length(); p++) {
+        char i = str[p];
         if (i == '.') {
             periodCount++;
             continue;
         }
-        if (i != '1' || i != '2' || i != '3' || i != '4' || i != '5' || i != '6'|| i != '7' || i != '8' || i != '9' || i != '0')
+        if (!isdigit(i)) {
+            cout << "error at if 2\n";
             return false;
+        }
+        else 
+            numCount++;
         
-        if (periodCount > 1)
+        if (periodCount > 1) {
+            cout << "error at period count\n";
             return false;
+        }
+    }
+    if (numCount == 0) {
+        return false;
     }
     return true;
 }
