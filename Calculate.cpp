@@ -4,11 +4,16 @@
 #include <iomanip>
 using namespace std;
 bool isString(string str) {
-    for (int i=0; i < str.length(); i++){
-        if (str[i] == '.') {
+    int period-count = 0;
+    for (char i : str) {
+        if (i == '.') {
+            period-count++;
             continue;
         }
-        if (isdigit(str[i]) == false)
+        if (i != '1' || i != '2' || i != '3' || i != '4' || i != '5' || i != '6'|| i != '7' || i != '8' || i != '9' || i != '0')
+            return false;
+        
+        if (period-count > 1)
             return false;
     }
     return true;
