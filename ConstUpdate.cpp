@@ -1,3 +1,9 @@
+/*
+    Made by Lucas Thompson on Github.
+    https://github.com/lthomp079/JosephGPA
+*/
+
+
 #include <iostream>
 #include <fstream>
 #include <thread>
