@@ -1,6 +1,7 @@
 /*
     Made by Lucas Thompson on Github.
     https://github.com/lthomp079/JosephGPA
+    Copyright 2025 Lucas B. Thompson under the Apache 2.0 License
 */
 
 
