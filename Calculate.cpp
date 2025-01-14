@@ -28,11 +28,12 @@ bool isString(string str) {
         
         if (periodCount > 1) {
             cout << "error at period count\n";
-            return false;
+            exit(4);
         }
     }
     if (numCount == 0) {
-        return false;
+        cout << "No numbers\n";
+        exit(5);
     }
     return true;
 }
