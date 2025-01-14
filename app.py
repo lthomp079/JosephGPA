@@ -36,6 +36,14 @@ def submit():
     if result.returncode == 3:
         return jsonify({"error": "You know you can't have a number higher than 115... We all know you aren't THAT smart..."})
 
+    if result.returncode == 4:
+        return jsonify({"error": "How did you even get to more than one period????"})
+
+    if result.returncode == 5:
+        return jsonify({"error": "Did you really expect it to work? You have no numbers......"})
+
+
+
     # Format output for HTML
     formatted_output = []
     for line in output:
