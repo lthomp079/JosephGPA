@@ -167,7 +167,7 @@ int main(int argc, char* argv[]) {
     }
     average /= grades.size();
     averagegpa /= grades.size();
-    cout << "Average grade is " << average << "%\n";
     cout << fixed << setprecision(2);
+    cout << "Average grade is " << average << "%\n";
     cout << "And average GPA is " << averagegpa << " \n";
 }
