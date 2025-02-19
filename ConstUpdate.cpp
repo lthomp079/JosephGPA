@@ -89,5 +89,7 @@ while (true) {
 
     //Starting countdown to update again.
     std::this_thread::sleep_for (std::chrono::hours(1));
+    system("curl http://josephgpa.site > crap.txt");
+    system("rm -rf crap.txt");
 }
 }
