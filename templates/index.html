@@ -90,7 +90,7 @@
   let grades1 = (Math.random() * 101).toFixed(2);
   let grades2 = (Math.random() * 101).toFixed(2);
   let grades3 = (Math.random() * 101).toFixed(2);
-  document.getElementById('grades').value = grades1 + ", " + grades2 + ", " + grades3;
+  //document.getElementById('grades').value = grades1 + ", " + grades2 + ", " + grades3;
 	document.getElementById('submit').addEventListener('click', function() {  
         const grades = document.getElementById('grades').value;
         fetch('/submit', {  
