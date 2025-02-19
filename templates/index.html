@@ -80,7 +80,7 @@
    <div class="container">  
       <h1>The best GPA calculator for FCPS students!</h1>  
       <p>Enter your grades separated by commas (e.g., 90, 85, 78)</p>  
-      <input type="text" id="grades" placeholder="Enter grades here" value="{grades1}">  
+      <input type="text" id="grades" placeholder="Enter grades here">  
       <button id="submit">Submit</button>
       <hr> 
       <div id="result"></div>  
@@ -90,7 +90,7 @@
   let grades1 = (Math.random() * 101).toFixed(2);
   let grades2 = (Math.random() * 101).toFixed(2);
   let grades3 = (Math.random() * 101).toFixed(2);
-  //document.getElementById('grades').value = grades1 + ", " + grades2 + ", " + grades3;
+  document.getElementById('grades').value = grades1 + ", " + grades2 + ", " + grades3;
 	document.getElementById('submit').addEventListener('click', function() {  
         const grades = document.getElementById('grades').value;
         fetch('/submit', {  
