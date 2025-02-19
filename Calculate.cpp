@@ -146,7 +146,7 @@ int main(int argc, char* argv[]) {
         cout << "You have no elements\n";
         return 2; // ERROR 2 NO ELEMENTS, ONLY STOP
     }
-    cout << fixed << setprecision(1);
+    cout << fixed << setprecision(2);
     float gpa;
     double grade = grades[0];
     string letter;
