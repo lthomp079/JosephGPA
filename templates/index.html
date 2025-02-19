@@ -15,9 +15,9 @@
 	<link rel="icon" type="image/x-icon" href="https://i.ibb.co/j67KpYg/download-removebg-preview.png">
       <style>      
       body {  
-        font-family: "lucida sans unicode", "lucida grande", sans-serif;  
+        font-family: 'Times New Roman', serif;  
         padding: 20px;  
-        background: #229954;  
+        background-image: linear-gradient(to left bottom, #356292, #5DBDFC); 
       }  
       .container {    
         margin: 40px auto;  
@@ -38,7 +38,7 @@
       button {  
         padding: 10px;  
         margin-top: 10px;  
-        width: 100%;  
+        width: 100%;
       }
       input {  
         padding: 10px;  
@@ -46,14 +46,14 @@
         width: 97.5%;  
       }    
       button {  
-        background: brown;  
-        color: #fff;  
+        background: #1A334E;;  
+        color: #FFF;  
         border: none;  
         border-radius: 5px;  
         cursor: pointer;  
       }  
       button:hover {  
-        background: brown;  
+        background: #2B7398;
       }  
       #result {  
         margin-top: 20px;  
@@ -75,27 +75,24 @@
    </style>  
 </head>  
 <body>
-   <h1 style="text-align: center">Welcome to JosephGPA, the best GPA calculator for FCPS students!</h1><br>
+   <h1 style="text-align: center">Welcome To JosephGPA! Made after the greatest guy ever!!</h1><br>
    <p style="text-align: center">This site was name after my friend Joseph, but it also recognizes Mr. Julian for his amazing contributions to the website and the owner, me!</p1>
    <div class="container">  
-      <h1>Welcome To JosephGPA! Made after the greatest guy ever!!</h1>  
+      <h1>The best GPA calculator for FCPS students!</h1>  
       <p>Enter your grades separated by commas (e.g., 90, 85, 78)</p>  
-      <input type="text" id="grades" placeholder="Enter grades here" value="84, 96.5, 32.1">  
+      <input type="text" id="grades" placeholder="Enter grades here" value="{grades1}">  
       <button id="submit">Submit</button>
       <hr> 
       <div id="result"></div>  
    </div>  
   
    <script>  
-    	
+  let grades1 = (Math.random() * 101).toFixed(2);
+  let grades2 = (Math.random() * 101).toFixed(2);
+  let grades3 = (Math.random() * 101).toFixed(2);
+  document.getElementById('grades').value = grades1 + ", " + grades2 + ", " + grades3;
 	document.getElementById('submit').addEventListener('click', function() {  
         const grades = document.getElementById('grades').value;
-        /*  
-        let slopebool = grades.includes("hawks");  
-        if (slopebool == true) {  
-        window.open("/hawks");  
-        }
-	      */ 
         fetch('/submit', {  
            method: 'POST',  
            headers: {  
