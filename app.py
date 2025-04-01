@@ -4,10 +4,15 @@
     Copyright 2025 Lucas B. Thompson under the Apache 2.0 License
 """
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import subprocess
 
 app = Flask(__name__)
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def robotAndSitemap():
+	return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route('/')
 def index():
@@ -138,4 +143,4 @@ def submit():
     })
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True, host='0.0.0.0', static_url_path='')
+    app.run(port=8080, debug=True, host='0.0.0.0')
