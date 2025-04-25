@@ -19,6 +19,10 @@ def robotAndSitemap():
 def index():
     return render_template('index.html')
 
+@app.route('/hans')
+def hans():
+    return render_template('hans.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
