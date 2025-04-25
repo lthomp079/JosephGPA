@@ -9,6 +9,7 @@ import subprocess
 
 app = Flask(__name__)
 
+@app.route('/hans.html')
 @app.route('/favicon.ico')
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
@@ -19,9 +20,6 @@ def robotAndSitemap():
 def index():
     return render_template('index.html')
 
-@app.route('/hans')
-def hans():
-    return render_template('hans.html')
 
 @app.route('/about')
 def about():
