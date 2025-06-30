@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /static/
-
-Sitemap: https://www.josephgpa.site/sitemap.xml
